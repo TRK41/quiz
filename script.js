@@ -1,10 +1,28 @@
 const questions = [
   
-    { text: 'what is the answer',
-        choices: ['choice1','correct','choice3','choice4']   },    
-    { text: 'what is the answer',
-        choices: ['choice1','choice2','choice3','correct']},
-    { text: 'what is the answer',
-        choices: ['choice1','choice2','correct','choice4']}    
+    { text: 'question1',
+        choices: ['choice1','correct','choice3','choice4'],
+        answer: 1
+    },    
+    { text: 'question2',
+        choices: ['choice1','choice2','choice3','correct'],
+        answer: 3
+    },
+    { text: 'question3',
+        choices: ['choice1','choice2','correct','choice4'],
+        answer: 2
+    }    
 
 ]
+
+//for ( Let i = 0; i < (questions.length); i++;) {
+//    console.log(questions[i]);
+//}
+let time = 75;
+setInterval(function() {
+    document.getElementById("time").innerHTML = ('time: ', time);time--;
+        if( time == -1){
+            document.getElementById("time").innerHTML ='0';
+            clearInterval(time = 0);  
+        }
+},1000); 
