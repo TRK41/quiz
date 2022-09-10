@@ -18,6 +18,8 @@ const questions = [
 //for ( Let i = 0; i < (questions.length); i++;) {
 //    console.log(questions[i]);
 //}
+//
+
 let time = 75;
 setInterval(function() {
     document.getElementById("time").innerHTML = ('time: ', time);time--;

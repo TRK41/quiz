@@ -2,8 +2,11 @@
     background-color: aliceblue;
 }
 
-.header {
+header.header {
     color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
       
 }
 
@@ -15,9 +18,11 @@ section {
 nav {
 list-style: none;
 font-weight: bold;
-display: flex;
-flex-wrap: wrap;
 justify-content: end;
+}
+
+nav ul li {
+    display: inline;
 }
 
 .title {
@@ -31,4 +36,19 @@ justify-content: end;
     width: 50%;
     border: 3px solid black;
     padding: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 22px;
+    background-color: blueviolet;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px darkgrey;
 }
