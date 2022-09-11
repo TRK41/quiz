@@ -15,6 +15,10 @@ section {
     height: 300px;
 }
 
+section p {
+    font-size: 46px;
+}
+
 nav {
 list-style: none;
 font-weight: bold;
@@ -36,10 +40,16 @@ nav ul li {
     width: 50%;
     border: 3px solid black;
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
 }
 /* button developement*/
 button {
     display: inline-block;
+    position:relative;
     padding: 15px 25px;
     font-size: 22px;
     background-color: blueviolet;
