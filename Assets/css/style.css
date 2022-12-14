@@ -73,3 +73,7 @@ button:active {
     transform: translateY(3px);
     transition-duration: 80ms;
 }
+
+a:link {
+    text-decoration: none;
+}

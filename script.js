@@ -1,3 +1,4 @@
+var startButton = document.getElementById("start");
 const questions = [
   
     { text: 'question1',
@@ -15,16 +16,21 @@ const questions = [
 
 ]
 
-for ( Let i = 0; i < (questions.length); i++;) {
+for (i = 0; i < (questions.length); i++){
     console.log(questions[i]);
 }
 
 
-let time = 75;
-setInterval(function() {
-    document.getElementById("time").innerHTML = ('time: ', time);time--;
-        if( time == -1){
-            document.getElementById("time").innerHTML ='0';
-            clearInterval(time = 0);  
-        }
-},1000); 
+
+
+document.addEventListener("click", function(event) {
+
+    let time = 75;
+    setInterval(function() {
+        document.getElementById("time").innerHTML = ('time: ', time);time--;
+            if( time == -1){
+                document.getElementById("time").innerHTML ='0';
+                clearInterval(time = 0);  
+            }
+    },1000); 
+} );
